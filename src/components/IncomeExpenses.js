@@ -18,15 +18,15 @@ export const IncomeExpenses = () => {
   ).toFixed(2);
 
   return (
-    <div className="inc-exp-container">
-        <div>
-          <h4>Income</h4>
-  <p className="money plus">${numberWithCommas(income)}</p>
-        </div>
-        <div>
-          <h4>Expense</h4>
-  <p className="money minus">${numberWithCommas(expense)}</p>
-        </div>
+    <div className='inc-exp-container'>
+      <div>
+        <h4>Income</h4>
+        <p className='money plus'>&#8358;{numberWithCommas(income)}</p>
       </div>
-  )
+      <div>
+        <h4>Expense</h4>
+        <p className='money minus'>&#8358;{numberWithCommas(expense)}</p>
+      </div>
+    </div>
+  );
 }
